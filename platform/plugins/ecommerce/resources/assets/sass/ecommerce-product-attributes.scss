@@ -1,0 +1,117 @@
+.swatches-container {
+    .header {
+        display: flex;
+        flex-direction: row;
+        font-weight: 700;
+        background-color: #36c6d3;
+        color: #ffffff;
+
+        > * {
+            float: left;
+            padding: 10px;
+            text-align: center;
+        }
+
+        &:before {
+            content: "#";
+            display: inline-block;
+            width: 50px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .swatch-title,
+        .swatch-slug,
+        .swatch-value {
+            flex: 1;
+        }
+
+        .swatch-is-default,
+        .swatch-image {
+            width: 120px;
+        }
+
+        .remove-item {
+            width: 80px;
+        }
+    }
+
+    .swatches-list {
+        float: left;
+        list-style: none;
+        margin: 0 0 15px;
+        padding: 0;
+        width: 100%;
+        counter-reset: swatches-list;
+
+        li {
+            padding-left: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            counter-increment: swatches-list;
+
+            + li {
+                margin-top: 1px;
+            }
+
+            &:nth-child(odd) {
+                background-color: #f0f0f0;
+            }
+
+            &:before {
+                content: counter(swatches-list);
+                width: 50px;
+                position: absolute;
+                height: 100%;
+                top: 0;
+                left: 0;
+                cursor: move;
+                background-color: #bbbbbb;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            > * {
+                float: left;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .swatch-title,
+            .swatch-slug,
+            .swatch-value {
+                flex: 1;
+            }
+
+            .swatch-is-default,
+            .swatch-image {
+                width: 120px;
+            }
+
+            .image-box-container {
+                width: 34px;
+                margin: 0 auto;
+                font-size: 0;
+                position: relative;
+
+                img {
+                    border: 1px solid #cccccc;
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+
+            .remove-item {
+                width: 50px;
+            }
+        }
+
+        .list-photo-hover-overlay {
+            display: none;
+        }
+    }
+}

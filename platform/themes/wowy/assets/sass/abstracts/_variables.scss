@@ -1,0 +1,37 @@
+//1.FONT
+
+$font-text: var(--font-text), sans-serif;
+$font-heading: var(--font-text), sans-serif;
+
+$font-xxs: 10px;
+$font-xs: 12px;
+$font-sm: 13px;
+$font-md: 14px;
+$font-lg: 15px;
+$font-xl: 16px;
+$font-xxl: 58px;
+
+//2.COLOR
+$color-brand: var(--color-brand);
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-warning: var(--color-warning);
+$color-danger: var(--color-danger);
+$color-success: var(--color-success);
+$color-info: var(--color-info);
+$color-text: var(--color-text);
+$color-heading: var(--color-heading);
+$color-grey-1: var(--color-grey-1);
+$color-grey-2: var(--color-grey-2);
+$color-grey-4: var(--color-grey-4);
+$color-grey-9: var(--color-grey-9);
+$color-muted: var(--color-muted);
+$color-body: var(--color-body);
+$color-brand-2: var(--color-brand-2);
+
+
+//3.Box shadow
+$box-shadow-1: 0 -3px 23px rgba(0, 0, 0, 0.06);
+$box-shadow-2: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+

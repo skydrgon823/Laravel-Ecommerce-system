@@ -1,0 +1,75 @@
+.rating_wrap {
+    font-family: "Font Awesome 6 Free" !important;
+    vertical-align: top;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+    width: 75px;
+    display: inline-block;
+
+    &::before {
+        font-size: 12px;
+        content: "\f005\f005\f005\f005\f005";
+        top: 0;
+        position: absolute;
+        left: 0;
+        float: left;
+        color: #d2d2d2;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    .product_rate {
+        overflow: hidden;
+        font-family: "Font Awesome 6 Free" !important;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 1.5em;
+        color: #EDB867;
+
+        &::before {
+            font-size: 12px;
+            content: "\f005\f005\f005\f005\f005";
+            top: 0;
+            position: absolute;
+            left: 0;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+    }
+}
+
+.dataTables_wrapper {
+    .dataTable {
+        td {
+            .table-actions {
+                min-width: 75px;
+                text-align: center;
+            }
+
+            img.fancybox {
+                cursor: pointer;
+            }
+
+            .more-review-images {
+                position: relative;
+                display: inline-block;
+
+                span {
+                    position: absolute;
+                    background: rgba(0, 0, 0, .5);
+                    left: 0.25rem;
+                    right: 0.25rem;
+                    top: 0.25rem;
+                    bottom: 0.25rem;
+                    z-index: 1;
+                    color: #fff;
+                    font-size: 22px;
+                    text-align: center;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}

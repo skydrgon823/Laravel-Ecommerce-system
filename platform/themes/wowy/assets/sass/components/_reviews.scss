@@ -1,0 +1,211 @@
+.image-viewer__item {
+    position: relative;
+    -webkit-transition: all .3s cubic-bezier(.46, .03, .52, .96);
+    transition: all .3s cubic-bezier(.46, .03, .52, .96);
+    text-align: initial;
+    margin-right: 2px;
+    background-color: #eee;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #c4c6cf;
+    margin-top: 5px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.image-upload__uploader-container {
+    display: inline-block;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .image-upload__uploader {
+        width: 70px;
+        height: 70px;
+        border: 1px dashed #c4c6cf;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        &:hover {
+            background: #d9edf7;
+
+            .image-upload__file-input {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.image-upload__icon {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.image-upload__text {
+    color: #333;
+    font-size: 10px;
+    padding: 0 3px;
+    text-align: center;
+}
+
+.image-upload__file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-viewer__item {
+    display: inline-block;
+}
+
+.image-viewer__list {
+    display: block;
+    width: 100%;
+}
+
+.image-viewer__icon-remove {
+    position: absolute;
+    top: -1px;
+    right: 2px;
+    z-index: 1;
+    cursor: pointer;
+
+    i {
+        color: #ffffff;
+        background: #848484;
+        border-radius: 50%;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 10px;
+    }
+}
+
+.image-viewer__list.is-loading {
+    .loading {
+        display: block !important;
+    }
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #d9edf7;
+    border: 1px solid #bce8f1;
+    padding: 5px;
+    font-size: 0.9em;
+    cursor: help;
+}
+
+.image-upload__viewer {
+    .image-viewer__list {
+        .loading {
+            position: absolute;
+            width: 100%;
+            background-color: rgba(146, 162, 177, 52%);
+            top: 0;
+            display: none;
+
+            .half-circle-spinner {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.block--review {
+    .block__header {
+        .block__info {
+            width: 100%;
+        }
+    }
+
+    .lh-1 {
+        line-height: 1;
+    }
+
+    .block__images {
+        a {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem !important;
+
+            img {
+                object-fit: cover;
+                border: none;
+            }
+        }
+
+        .more-review-images {
+            span {
+                background: rgba(0, 0, 0, .5);
+                bottom: 0;
+                color: #ffffff;
+                font-size: 22px;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 1;
+                align-self: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &.block__images_total {
+            a {
+                padding: 1.5px;
+                height: fit-content;
+                width: inherit;
+                margin: 0;
+                border: 0;
+            }
+        }
+    }
+}
+
+.block__content {
+    position: relative;
+
+    .review__loading {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 31;
+        display: flex;
+        align-items: center;
+        top: 0;
+        background: rgba(0, 0, 0, .03);
+    }
+}

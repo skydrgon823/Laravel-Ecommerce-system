@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "wowy-font";
+    src: url("../../fonts/wowy-font/wowy-font.ttf?5ff2f70882bedebb09d812961feeb5e7") format("truetype"),
+        url("../../fonts/wowy-font/wowy-font.woff?5ff2f70882bedebb09d812961feeb5e7") format("woff"),
+        url("../../fonts/wowy-font/wowy-font.woff2?5ff2f70882bedebb09d812961feeb5e7") format("woff2"),
+        url("../../fonts/wowy-font/wowy-font.eot?5ff2f70882bedebb09d812961feeb5e7#iefix") format("embedded-opentype"),
+        url("../../fonts/wowy-font/wowy-font.svg?5ff2f70882bedebb09d812961feeb5e7#wowy-font") format("svg");
+}
+
+i[class^="wowy-font-"]:before, i[class*=" wowy-font-"]:before {
+    font-family: wowy-font !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wowy-font-cpu:before {
+    content: "\f101";
+}
+.wowy-font-desktop:before {
+    content: "\f102";
+}
+.wowy-font-diamond:before {
+    content: "\f103";
+}
+.wowy-font-dress:before {
+    content: "\f104";
+}
+.wowy-font-high-heels:before {
+    content: "\f105";
+}
+.wowy-font-home:before {
+    content: "\f106";
+}
+.wowy-font-kite:before {
+    content: "\f107";
+}
+.wowy-font-smartphone:before {
+    content: "\f108";
+}
+.wowy-font-teddy-bear:before {
+    content: "\f109";
+}
+.wowy-font-tshirt:before {
+    content: "\f10a";
+}

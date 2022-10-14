@@ -1,0 +1,8 @@
+{
+    "name": "botble/stripe",
+    "description": "Stripe Payment Gateway",
+    "type": "package",
+    "require": {
+        "stripe/stripe-php": "^9.0"
+    }
+}

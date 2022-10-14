@@ -1,0 +1,231 @@
+/*COMPONENTS -> BANNERS*/
+.banner-left-icon {
+    position: relative;
+    background: #fff;
+
+    &:hover {
+        .banner-icon {
+            transform: translateY(-5px);
+            transition-duration: 0.3s;
+        }
+    }
+
+    .banner-icon {
+        max-width: 60px;
+        margin-right: 20px;
+        transition-duration: 0.3s;
+    }
+
+    .banner-text {
+        h3 {
+            color: $color-grey-2;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: $color-grey-4;
+        }
+    }
+
+    &.style-2 {
+        position: relative;
+        border: 1px solid #eee;
+        padding: 20px;
+    }
+}
+
+.banner-img {
+    position: relative;
+    clear: both;
+
+    &:hover {
+        img {
+            opacity: 0.9;
+        }
+    }
+
+    &.banner-1 {
+        .banner-text {
+            top: 30%;
+        }
+    }
+
+    &.banner-2 {
+        .banner-text {
+            right: 10px;
+        }
+    }
+
+    .banner-text {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        transform: translateY(-50%);
+        padding: 20px 30px;
+
+        span {
+            color: $color-grey-4;
+        }
+
+        h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        &:hover h4 {
+            margin-left: 5px;
+        }
+
+        a {
+            i {
+                margin-left: 5px;
+                transition-duration: 0.3s;
+                font-size: 10px;
+            }
+
+            &:hover i {
+                margin-left: 10px;
+                transition-duration: 0.3s;
+            }
+        }
+
+    }
+
+    &.style-2 {
+        border: 1px solid #eee;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 428px;
+
+        h4 {
+            color: #fff;
+        }
+    }
+}
+
+.banner-big {
+    .btn {
+        background: $color-brand-2;
+        background: -webkit-gradient(linear, left top, right top, from($color-brand-2), to($color-brand));
+        background: linear-gradient(90deg, $color-brand-2 0%, $color-brand 100%);
+        color: #fff;
+        border-radius: 50px;
+        font-size: 13px;
+        padding: 10px 24px;
+        border: 0;
+    }
+}
+
+/*Deal banners*/
+.deal {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    background-color: #f5f6f9;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 420px;
+
+    > div {
+        width: 100%;
+    }
+
+    h2 {
+        color: $color-danger;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.1;
+        margin-bottom: 5px;
+        max-width: 240px;
+    }
+
+    h5 {
+        color: $color-grey-2;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-bottom: 20px;
+        max-width: 240px;
+    }
+
+    .deal-content {
+        align-self: center;
+    }
+
+    .product-title {
+        max-width: 240px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.23;
+
+        a {
+            color: $color-grey-1;
+        }
+    }
+
+    .product-price {
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.25;
+        margin-bottom: 20px;
+        color: $color-danger;
+
+        .new-price {
+            font-weight: 400;
+            letter-spacing: -.01em;
+            margin-right: 10px;
+        }
+
+        .old-price {
+            color: #cccccc;
+            text-decoration: line-through;
+        }
+    }
+
+    .btn {
+        background: $color-brand-2;
+        background: -webkit-gradient(linear, left top, right top, from($color-brand-2), to($color-brand));
+        background: linear-gradient(90deg, $color-brand-2 0%, $color-brand 100%);
+        color: #fff;
+        border-radius: 50px;
+        font-size: 13px;
+        padding: 10px 24px;
+        border: 0;
+
+        i {
+            margin-left: 5px;
+            transition-duration: 0.3s;
+            font-size: 10px;
+        }
+
+        &:hover i {
+            margin-left: 10px;
+            transition-duration: 0.3s;
+        }
+    }
+
+    .deal-bottom {
+        align-self: flex-end;
+
+        .deals-countdown {
+            margin-left: -12px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.banner-bg {
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}

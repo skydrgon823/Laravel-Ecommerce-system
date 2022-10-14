@@ -1,0 +1,105 @@
+.newsletter {
+    .icon-email {
+        max-width: 40px;
+        margin-right: 15px;
+    }
+
+    .form-subcriber {
+        input {
+            border-radius: 50px 0 0 50px;
+            border: 0;
+            padding: 0 20px 0 30px;
+            font-size: 14px;
+        }
+
+        button {
+            border-radius: 0 50px 50px 0;
+            border: 0;
+            font-size: 14px;
+            padding: 0 30px;
+        }
+    }
+}
+
+.download-app {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 25px 0 33px;
+
+    a {
+        display: block;
+        margin-right: 12px;
+
+        img {
+            width: 170px;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+        }
+    }
+}
+
+.footer-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: block;
+        margin: 0 0 13px;
+        transition-duration: 0.3s;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            padding-left: 5px;
+            transition-duration: 0.3s;
+        }
+
+        a {
+            font-size: 14px;
+            color: $color-grey-1;
+            display: block;
+
+            &:hover {
+                color: $color-brand;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid #eee;
+}
+
+#scrollUp {
+    width: 40px;
+    height: 40px;
+    background-color: $color-brand;
+    color: #ffffff;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 999 !important;
+
+    i {
+        display: block;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

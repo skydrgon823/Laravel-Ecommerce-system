@@ -1,0 +1,7 @@
+{
+    "name": "Wowy",
+    "namespace": "Theme\\Wowy\\",
+    "description": "Wowy - Laravel Multipurpose eCommerce script",
+    "author": "Botble Technologies",
+    "required_plugins": []
+}

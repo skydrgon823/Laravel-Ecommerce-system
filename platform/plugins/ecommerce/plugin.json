@@ -1,0 +1,9 @@
+{
+    "name": "Ecommerce",
+    "namespace": "Botble\\Ecommerce\\",
+    "provider": "Botble\\Ecommerce\\Providers\\EcommerceServiceProvider",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "3.0",
+    "description": "Plugin for E-commerce features"
+}

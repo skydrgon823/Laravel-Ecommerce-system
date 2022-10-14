@@ -1,0 +1,62 @@
+.rp-card-report-statics {
+    .rp-card-content {
+        .block-content {
+            color: #fff;
+        }
+
+        .block-left {
+            i.fa, i.fas {
+                line-height: initial;
+            }
+
+            span {
+                border-radius: 10px;
+            }
+        }
+
+        .rounded {
+            border-radius: 0.25rem !important;
+        }
+    }
+}
+
+.rp-card-earning {
+    .rp-card-content {
+
+        .rp-card-chart {
+            min-height: 200px;
+        }
+
+        .rp-card-information {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.select-date-range-btn {
+    border: 1px dashed #bcc3c7;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 8px 20px;
+    color: #0181b9;
+    background: transparent;
+
+    &:hover {
+        text-decoration: none;
+        background-color: #0181b9;
+        color: white;
+        border: 1px solid #0181b9;
+    }
+}
+

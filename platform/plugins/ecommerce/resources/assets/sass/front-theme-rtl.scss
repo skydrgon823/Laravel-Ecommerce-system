@@ -1,0 +1,82 @@
+body[dir="rtl"] {
+    text-align: right;
+
+    .show-cart-link {
+        i {
+            float: left;
+        }
+    }
+
+    .float-end {
+        float: left !important;
+    }
+
+    .float-start {
+        float: right !important;
+    }
+
+    .text-start {
+        text-align: right !important;
+    }
+
+    .text-end {
+        text-align: left !important;
+    }
+
+    .list-group {
+        padding-right: 0;
+    }
+
+    .hrv-checkbox, input[type=checkbox] {
+        margin: 0 0 0 0.5rem;
+    }
+
+    .hrv-checkbox:before, input[type=checkbox]:not(.hrv-checkbox):before {
+        left: 0;
+        right: 2px;
+    }
+
+    .magic-checkbox + label:before, .magic-radio + label:before {
+        left: auto;
+        right: 0;
+    }
+
+    .magic-radio + label:after {
+        left: auto;
+        right: 6px;
+    }
+
+    .magic-checkbox + label, .magic-radio + label {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+    @media screen and (min-width: 992px) {
+        .left {
+            border-left: 1px solid #c8c8c8;
+            padding-left: 60px;
+        }
+        .right {
+            padding-right: 50px;
+        }
+    }
+
+    .price-text, .total-text {
+        float: left;
+    }
+
+    .address-item.is-default .default {
+        right: auto;
+        left: 15px;
+    }
+
+    .back-to-cart {
+        float: right;
+        margin-left: 5px;
+    }
+
+    .select--arrow i {
+        right: auto;
+        left: 10px;
+    }
+}

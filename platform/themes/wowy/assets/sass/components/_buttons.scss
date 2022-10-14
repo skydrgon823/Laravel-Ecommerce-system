@@ -1,0 +1,148 @@
+/*COMPONENTS -> BUTTONS*/
+.btn-default {
+    color: #fff;
+    background-color: $color-brand;
+    border-radius: 50px;
+    padding: 13px 28px;
+
+    i {
+        font-weight: 400;
+        font-size: 12px;
+        margin-left: 10px;
+        transition-duration: 0.2s;
+    }
+
+    &:hover i {
+        margin-left: 15px;
+        transition-duration: 0.2s;
+    }
+}
+
+.btn-lg {
+    padding: 13px 28px;
+    font-size: 16px;
+}
+
+.btn-sm {
+    padding: 8px 18px !important;
+    font-size: 12px;
+}
+
+.btn-md {
+    padding: 10px 24px !important;
+    font-size: 12px;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn-shadow-brand {
+    box-shadow: 0 2px 6px 0 rgba(88, 151, 251, 0.16);
+    border: 1px solid #f7f8f9;
+
+    &:hover {
+        border: 1px solid $color-brand;
+    }
+}
+
+.btn-brand {
+    background-color: $color-brand;
+    border-color: $color-brand;
+}
+
+button.submit, button[type='submit'] {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 40px;
+    color: #ffffff;
+    border: none;
+    background-color: $color-brand;
+    border-radius: 50px;
+
+    &:hover {
+        background-color: $color-primary !important;
+    }
+}
+
+.btn-brand:hover {
+    background-color: $color-primary !important;
+}
+
+.btn-login {
+    font-size: 13px;
+
+    .btn {
+        min-width: unset;
+    }
+
+    li {
+        margin: 0 5px 0;
+        display: inline-block;
+
+        a {
+            border-radius: 5px;
+            padding: 15px 25px;
+            color: #fff;
+            display: block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: 0;
+            font-size: 14px;
+        }
+    }
+}
+
+
+.btn, .button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 54px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid $color-brand;
+    text-transform: uppercase;
+    background: $color-brand;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+
+    &:hover {
+        background: $color-primary;
+    }
+
+    &.btn-sm {
+        padding: 8px 18px;
+        font-size: 12px;
+        text-transform: none;
+        line-height: 1.8;
+    }
+
+    &.btn-rounded {
+        border-radius: 50px;
+    }
+
+    &.btn-secondary {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+    }
+
+    &.btn-facebook {
+        background: #3b5998;
+        border-color: #3b5998;
+    }
+
+    &.btn-google {
+        background: #d85040;
+        border-color: #d85040;
+    }
+}
